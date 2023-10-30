@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>Leximal Scoop for This</h1>
+</body>
+<script>
+    let data = {
+        list:'Friends',
+        names:['Haseeb', 'Usman', 'Zillay'],
+        getFriends:function()
+        {
+            this.names.map((item)=>{
+                console.warn(this.list,item)
+            })
+        }
+    }
+
+    data.getFriends();
+</script>
+</html>

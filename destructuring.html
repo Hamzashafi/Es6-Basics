@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>destructuring Arrays</h1>
+</body>
+<script>
+    let fruits=['apple','banana','kiwi','pineapple'];
+
+    //let [fruit1,,fruit3, fruit5 = "unknown value"]=fruits;
+
+    //console.warn(fruit3)
+
+    let [fruit1, fruit2,...fruitx] = fruits;
+    console.warn(fruitx);
+</script>
+</html>

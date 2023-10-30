@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>Promise Operator</h1>
+</body>
+<script>
+    let a =undefined;
+
+    let promiseData = new Promise((resolved,reject)=>
+    {
+        setTimeout(()=>{
+            a = "Hello promise"
+            resolved("done")
+        }, 3000);
+    })
+        promiseData.then(()=>{
+            alert(a);
+        })
+</script>
+</html>
