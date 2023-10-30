@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>Inheritance</h1>
+</body>
+
+<script>
+    class Category {
+        dryfruit() {
+            return "almond is dry fruit";
+        }
+        pomefruit(){
+            return "apple is pome fruit";
+        }
+    }
+
+    class Fruits extends Category{
+        constructor(){
+            super()
+            console.warn("constructor");
+        }
+        getFruit(){
+            return "you got apple";
+        }
+    }
+
+    let f1 = new Fruits;
+    let c1 = new Category;
+
+    console.warn(f1.getFruit());
+    //console.warn(c1.dryfruit())
+</script>
+</html>
