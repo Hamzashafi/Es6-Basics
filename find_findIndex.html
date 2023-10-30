@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>find and findIndex</h1>
+</body>
+
+<script>
+    //let data = [10,30,60,120];
+
+    let data = [
+        {id:20, name: "a"},
+        {id:45, name: "b"},
+        {id:78, name:"c"},
+        {id:90, name:"d"},
+    ];
+
+    let result = data.find(function (item) {
+            return item.id<50;
+        })
+
+  /*  let result = data.find(function(item)
+    {
+        return item > 50; 
+    }) */
+
+   /* let result = data.findIndex(function(item)
+    {
+        return item > 50; 
+    }) */
+
+    //let result = data.find((item)=> item>10 && item<100)
+
+
+    console.warn(result)
+</script>
+</html>

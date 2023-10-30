@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Default Parameters</h1>
+</body>
+<script>
+    /*  function someVal()
+      {
+          return "Last";
+      }
+      function add(a,b="middle",c=someVal())
+      {
+          return a + " "+ b +" " +c;
+      }
+      console.warn(add("first")); */
+
+    function main(a, b = main()) {
+        return a + b;
+    }
+    main();
+</script>
+
+</html>

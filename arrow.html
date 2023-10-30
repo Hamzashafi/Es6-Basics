@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>arrow function</h1>
+</body>
+<script>
+    /*let data = [20,40,70,90,130];
+
+    let newData = data.map((item)=>item*2)
+
+    console.warn(newData); */
+
+    let item = {
+        name: "John",
+        getNameArrow:()=>{
+            //console.warn("normal" ,this)
+            console.warn("arrow", this)
+        }
+    }
+
+    //item.getName();
+    item.getNameArrow();
+</script>
+</html>
